@@ -1,0 +1,294 @@
+
+.paisaje{
+    background-color: rgb(118, 215, 121);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+.num3{
+    position: absolute;
+    width: 7%;
+    left: 50%;
+    top: 40%;
+    opacity: 0;
+    animation-name: num;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+.num2{
+    position: absolute;
+    width: 7%;
+    left: 50%;
+    top: 40%;
+    opacity: 0;
+    animation-name: num;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+.num1{
+    position: absolute;
+    width: 7%;
+    left: 50%;
+    top: 40%;
+    opacity: 0;
+    animation-name: num;
+    animation-duration: 2s;
+    animation-delay: 4.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+.burbuja{
+    position: absolute;
+    width: 20%;
+    left: 43%;
+    top: 30%;
+    opacity: 0;
+    animation-name: num;
+    animation-duration: 3s;
+    animation-delay: 6.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+.accion{
+    position: absolute;
+    width: 20%;
+    left: 43%;
+    top: 37%;
+    opacity: 0;
+    animation-name: num;
+    animation-duration: 3s;
+    animation-delay: 6.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+.nube{
+    position: absolute;
+    bottom: 71%;
+    left: 70%;
+    z-index: 1;
+    opacity: 0;
+    animation-name: cloud;
+    animation-duration: 4s;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+.nube2{
+    position: absolute;
+    bottom: 71%;
+    left: 45%;
+    z-index: 1;
+    opacity: 0;
+    animation-name: cloud2;
+    animation-duration: 6s;
+    animation-delay: 14s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+}
+.lluvia{
+    position: absolute;
+    left: 45%;
+    top: 8%;
+    opacity: 0;
+    animation-name: rain;
+    animation-duration: 3s;
+    animation-delay: 14s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+.lluvia2{
+    position: absolute;
+    left: 45%;
+    top: 8%;
+    opacity: 0;
+    animation-name: rain;
+    animation-duration: 3s;
+    animation-delay: 15s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+#sol .sol{
+    position: absolute;
+    left: 88%;
+    bottom: 78%;
+    animation-name: sunshine;
+    animation-duration: 1s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.flor{
+    position: absolute;
+    left: 44%;
+    bottom: 4%;
+    opacity: 0;
+    animation-name: flower;
+    animation-duration: 2s;
+    animation-delay: 17s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+.flor2{
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    opacity: 0;
+    animation-name: flower;
+    animation-duration: 2s;
+    animation-delay: 17s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+.flor3{
+    position: absolute;
+    left: 56%;
+    bottom: 4%;
+    opacity: 0;
+    animation-name: flower;
+    animation-duration: 2s;
+    animation-delay: 17s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+.m2{
+    position: absolute;
+    left: 44%;
+    bottom: 4%;
+    opacity: 0;
+    animation-name: mensaje2;
+    animation-duration: 2s;
+    animation-delay: 19.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes sunshine{
+    0%{
+        opacity: 1;
+        
+    }
+    50%{
+        opacity: 0.86;
+        width: 10.2%
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes cloud{
+    0%{
+        left: 75%;
+        opacity: 0.4; 
+    }
+    50%{
+        opacity: 1; 
+    
+    }
+    99%{
+        opacity: 1; 
+    
+    }
+    100%{
+        left: 45%;
+        opacity: 1;
+    }
+}
+@keyframes cloud2{
+    0%{
+        left: 45%;
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+        left: 45%; 
+    }
+    100%{
+        left: -30%;
+        opacity: 0.8;
+    }
+}
+@keyframes rain{
+    0%{
+        top: 8%;
+        height:50%;
+        opacity: 1;
+        
+    }
+    50%{
+        height: 50%;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        top: 40%;
+        height:50%;
+        opacity: 0.1;
+    }
+}
+@keyframes num{
+    0%{
+        opacity: 0;
+        
+        
+    }
+    50%{
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes flower{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        bottom: 14%;
+        
+    }
+}
+@keyframes mensaje2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        left:38%;
+        bottom: 44%;
+        width: 31%;
+        
+    }
+}
